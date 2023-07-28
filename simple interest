@@ -1,17 +1,21 @@
 import java.util.Scanner;
-public class si
+public class sim 
 {
-public static void main(String[] args)
+    public static void main(String[] args) 
 {
-float p,si,r,y;
-Scanner input=new Scanner(System.in);
-System.out.println("enter principle amount:");
-p=input.nextFloat();
-System.out.println("enter year:");
-y=input.nextInt();
-System.out.println("enter rate:");
-r=input.nextFloat();
-si=(p*y*r)/100;
-System.out.println("simple intrest:"+si);
-}
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the principal");
+        float p = in.nextFloat(); 
+        System.out.println("Enter year");
+        float t = in.nextFloat(); 
+        System.out.println("Enter rate");
+        float r = in.nextFloat(); 
+        CalculateSimpleInterest(p, t, r);
+    }
+    public static void CalculateSimpleInterest(float x, float y, float z)
+ {
+        float SI; 
+        SI = (x * y * z) / 100;
+        System.out.println("\nSimple Interest = " + SI);
+    }
 }
